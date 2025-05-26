@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(135deg, #86aeeb 0%, #135757 100%);
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header.bg-gradient-primary {
+    background: linear-gradient(90deg, #7fd6c8 0%, #3694ad 100%);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.forecast-section {
+    background: #eee3e3;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(197, 164, 164, 0.07);
+}
+
+.weather-card {
+    background: #bdc5ce;
+    border: 1px solid #e3e6ea;
+    border-radius: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 170px;
+}
+.weather-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+h1, h2 {
+    color: #1a237e;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+footer {
+    background: #bcc0c5;
+    color: #fff;
+    font-size: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+@media (max-width: 992px) {
+    .forecast-section {
+        margin-bottom: 2rem;
+
+    }
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .weather-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
